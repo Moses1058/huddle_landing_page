@@ -7,6 +7,7 @@
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 /* Global Styles */
@@ -24,20 +25,16 @@ img[alt=logo] {
 }
 
 header button {
-    width: 80px;
-    height: 24px;
     background-color: #FFFFFF;
     border: 0.588235px solid #FF52C1;
     box-shadow: 0px 0px 5px rgba(255, 82, 193, 0.218778);
     border-radius: 11.7647px;
-    cursor: pointer;
     /* -- */
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 9.41177px;
-    line-height: 13px;
     color: #FF52C1;
 }
+
 
 /*  ---------------------
 -------------Main */
@@ -287,4 +284,34 @@ img[alt=logo_white] {
     width: 23px;
     height: 23px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(105%) contrast(105%);
+}
+
+/*  changebla styles */
+header button {
+    width: 80px;
+    height: 24px;
+    font-size: 9.41177px;
+    line-height: 13px;
+}
+
+@media (min-width: 1440px) {
+    header button {
+        width: 136px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+
+/* active status */
+
+header button:hover {
+    border: 1px solid #FF8ED7;
+    color: #FF8ED7;
+}
+
+.get_started:hover,
+.info button:hover {
+    background-color: #FF8ED7;
 }
